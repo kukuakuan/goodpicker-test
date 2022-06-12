@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+
+.budget-content-content{
+    .budget-content-content-header{
+        width: max-content;
+    }
+    .budget-content-content-body{
+        max-width: 100%;
+        .budget-content-content-sort-budget{
+
+        }
+        .budget-content-content-table{
+            max-width: 100%;
+            
+        }
+    }
+}

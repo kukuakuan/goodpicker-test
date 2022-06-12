@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+
+.new-post {
+	padding: 3.5rem 12rem;
+
+	&__alert {
+		padding: 1rem;
+		border-radius: 0.75rem;
+		margin-bottom: 1.5rem;
+		font-size: 1rem;
+
+		&--success div {
+			color: $color-primary-green;
+		}
+
+		&--error div {
+			color: $color-primary-red;
+		}
+	}
+
+	&-modal {
+		&__title {
+			display: block;
+			font-family: $font-nunito-bold;
+			font-size: 1.5rem;
+			color: $color-primary-red;
+			border-bottom: 0.125rem solid $color-primary-red;
+			padding-bottom: 0.5rem;
+		}
+
+		&-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 0.9rem;
+		}
+
+		& > .ant-modal-content {
+			border-radius: 0.9375rem;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.new-post {
+		padding: 2.5rem 3rem;
+	}
+}

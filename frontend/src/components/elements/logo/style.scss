@@ -1,0 +1,41 @@
+.logo {
+	&--main {
+		width: 30rem;
+	}
+
+	&--watermark {
+		position: absolute;
+		width: 6.5rem;
+		top: 1.25rem;
+		left: 1.25rem;
+	}
+
+	&--header {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 3.5rem;
+	}
+
+	&-heading {
+		max-width: 100%;
+		height: auto;
+		border-radius: 0.25rem;
+		display: block;
+		margin: 0 auto 2.5rem auto;
+
+		&--about-us {
+			width: 40%;
+		}
+
+		&--404 {
+			width: 20%;
+		}
+	}
+
+	&--slogan {
+		width: 15rem;
+		height: auto;
+	}
+}

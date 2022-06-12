@@ -1,0 +1,66 @@
+@import '../../../styles/variables';
+.ant-input-custom-style-1 {
+    height: rem(48px);
+    background: $color-bg !important;
+    border-radius: rem(5px);
+    border: 0;
+    padding: rem(10px) rem(16px);
+    font-size: rem(16px);
+    .ant-input {
+        background: $color-bg !important;
+        font-size: rem(16px);
+        line-height: rem(24px);
+    }
+}
+
+.ant-input-custom-style-2 {
+    height: rem(48px);
+    padding: rem(12px) rem(20px);
+    margin-bottom: rem(12px) !important;
+    border-radius: rem(6px);
+    border-width: 0px;
+    font-size: rem(16px);
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    border-radius: 55px;
+    .ant-input {
+        font-size: rem(16px);
+        line-height: rem(24px);
+        border: 0px;
+        margin-bottom: rem(0px);
+        padding: rem(12px) rem(20px);
+        &::placeholder {
+            color: #858585;
+            font-weight: $fw-normal;
+        }
+    }
+    &:focus,
+    &:hover {
+        border-width: rem(2px);
+        border-color: $color-black;
+    }
+}
+
+.ant-input-custom-style-2.ant-input-affix-wrapper {
+    padding: 0 !important;
+    .ant-input {
+        font-size: rem(16px);
+        line-height: rem(24px);
+        border: 0px;
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        border-radius: 55px;
+        margin-bottom: rem(0px);
+        padding: rem(12px) rem(20px);
+        &::placeholder {
+            color: $color-gray;
+            font-weight: $fw-normal;
+        }
+    }
+    input {
+        border-radius: rem(6px);
+    }
+    .ant-input-suffix {
+        padding: rem(10px)
+    }
+}

@@ -1,0 +1,12 @@
+@import '../../../styles/variables';
+
+.ant-typography-custom {
+    
+}
+
+.ant-typography-custom.ant-typography-copy-custom-style-1 {
+    .ant-typography-copy {
+        color: $color-red;
+        font-size: rem(16px);
+    }
+}

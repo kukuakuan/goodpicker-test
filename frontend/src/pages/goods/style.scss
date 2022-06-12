@@ -1,0 +1,147 @@
+@import '../../styles/variables';
+
+.goodspage {
+	padding: 5rem 1.5rem;
+
+	&-detail {
+		padding: 0.5rem 1.5rem 1rem;
+		border-radius: 1rem;
+		margin-right: 1rem;
+		box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+			0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+
+		&-header {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+
+			&__title {
+				color: $color-primary-green;
+				font-size: 2.5rem;
+				font-family: $font-nunito-semi-bold;
+			}
+
+			&-control {
+				display: flex;
+				margin-top: 0.55rem;
+
+				&-btn {
+					margin-left: 0.5rem;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border: none;
+					transition: all 0.2s ease-in-out !important;
+					background-color: $color-primary-red;
+					color: $color-white !important;
+					border-radius: 50%;
+					font-size: 1.25rem;
+					height: 2.5rem;
+					width: 2.5rem;
+
+					&:hover {
+						cursor: pointer;
+						background-color: darken($color-primary-red, 12%);
+						border-color: darken($color-primary-red, 12%);
+					}
+				}
+			}
+		}
+
+		&__price {
+			color: $color-primary-red;
+			font-family: $font-nunito-semi-bold;
+			font-size: 1.25rem;
+		}
+
+		&__location {
+			font-size: 1.25rem;
+		}
+
+		&__ago {
+			color: $color-pale-sky;
+			font-size: 0.9rem;
+		}
+
+		&__des {
+			margin-top: 1.5rem;
+			font-size: 1rem;
+
+			&--big {
+				display: block;
+				font-size: 1.25rem;
+				font-family: $font-nunito-semi-bold;
+			}
+		}
+	}
+
+	&-skeleton {
+		display: flex;
+		width: 100%;
+		padding: 5rem 1.5rem;
+
+		&__image {
+			display: block !important;
+			width: 33% !important;
+			height: 20rem !important;
+			margin-right: 1rem;
+			border-radius: 1rem;
+
+			span {
+				width: 100% !important;
+			}
+		}
+
+		&__detail {
+			display: block !important;
+			width: 50% !important;
+			height: 40rem !important;
+			margin-right: 1rem;
+			border-radius: 1rem;
+
+			span {
+				width: 100% !important;
+			}
+		}
+
+		&__seller {
+			display: block !important;
+			width: 17% !important;
+			height: 15rem !important;
+			border-radius: 1rem;
+
+			span {
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+.ant-popover-inner {
+	border-radius: 0.8rem;
+
+	.ant-popover-message {
+		font-size: 0.85rem;
+	}
+
+	.ant-popover-buttons {
+		.ant-btn.ant-btn-sm {
+			border-radius: 0.5rem;
+			border: none;
+			color: $color-white !important;
+			background-color: rgba($color-pale-sky, 0.4);
+
+			&:hover {
+				background-color: rgba($color-pale-sky, 0.55);
+			}
+
+			&.ant-btn-primary {
+				background-color: $color-primary-red;
+
+				&:hover {
+					background-color: darken($color-primary-red, 15%);
+				}
+			}
+		}
+	}
+}

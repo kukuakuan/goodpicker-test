@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+.user-main-content {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    text-align: justify;
+    .user-avatar-side {
+        padding-top: rem(20px);
+        padding-bottom: rem(30px);
+    }
+}

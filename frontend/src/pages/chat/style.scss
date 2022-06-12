@@ -1,0 +1,137 @@
+@import '../../styles/variables';
+
+.chatpage {
+	&-row {
+		align-items: stretch;
+		height: calc(100vh - 4rem);
+	}
+
+	&-contact {
+		display: flex;
+		align-items: center;
+		padding: 0.5rem 0.3rem;
+		border-radius: 0.625rem;
+		transition: background 0.1s linear !important;
+
+		&--active,
+		&:hover {
+			background-color: rgba($color-black, 0.1);
+		}
+
+		&__name {
+			margin-left: 1rem;
+			color: $color-black;
+			font-size: 1.15rem;
+		}
+
+		&__avatar {
+			&--default {
+				background-color: $color-primary-green;
+				color: $color-white;
+				font-family: $font-nunito-semi-bold;
+			}
+		}
+
+		&-list {
+			padding: 0.5rem 0.25rem;
+			max-height: 100%;
+			overflow-y: auto;
+			border-right: 0.0625rem solid rgba($color-black, 0.2);
+		}
+	}
+
+	&-main {
+		padding: 0.5rem 1rem;
+		display: flex;
+		flex-direction: column;
+		border-right: 0.0625rem solid rgba($color-black, 0.2);
+	}
+
+	&-message {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0.5rem;
+
+		&--right {
+			align-items: flex-end;
+		}
+
+		&__content {
+			width: fit-content;
+			padding: 0.25rem 1rem;
+			font-size: 1.15rem;
+			border-radius: 10000rem;
+			color: $color-white;
+			font-family: $font-nunito-semi-bold;
+			background-color: rgba($color-primary-green, 1);
+		}
+
+		&--right &__content {
+			background-color: rgba($color-primary-red, 1);
+		}
+
+		&__ago {
+			font-size: 0.75rem;
+			margin-top: 0.25rem;
+			padding: 0 0.25rem;
+			color: $color-pale-sky;
+		}
+
+		&-list {
+			flex: 1 1 auto;
+			max-height: calc(100vh - 8.6rem);
+			overflow-y: auto;
+		}
+	}
+
+	&-input {
+		margin: 0;
+		margin-top: 1rem;
+		width: 100%;
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		.ant-form-item {
+			margin: 0;
+			flex: 1 1 auto;
+
+			input {
+				padding: 0.5rem 1.25rem;
+				font-size: 0.9rem;
+				border-radius: 100000rem;
+
+				&:hover {
+					border-color: $color-primary-green;
+				}
+
+				&:focus {
+					box-shadow: none;
+				}
+			}
+		}
+
+		button {
+			position: absolute;
+			background: transparent;
+			font-size: 1rem;
+			border: none;
+			right: 0.25rem;
+			cursor: pointer;
+		}
+	}
+
+	&-link {
+		display: block;
+		color: $color-black !important;
+		width: 100%;
+		padding: 0.7rem 1rem;
+		text-align: center;
+		border-radius: 0.625rem;
+		background-color: rgba($color-black, 0.1);
+
+		&-list {
+			padding: 0.5rem 0.3rem;
+		}
+	}
+}

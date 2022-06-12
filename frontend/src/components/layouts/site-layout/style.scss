@@ -1,0 +1,8 @@
+@import '../../../styles/variables';
+.layout {
+	min-height: 100vh;
+
+	.ant-layout-content {
+		background-color: rgba($color-oasis, 0.2);
+	}
+}

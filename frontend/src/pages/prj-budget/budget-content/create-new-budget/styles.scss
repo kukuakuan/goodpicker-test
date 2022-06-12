@@ -1,0 +1,32 @@
+@import '../../../../styles/variables';
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #363636 !important; 
+    font-weight: bolder;
+    font-size:medium
+ }
+.create-new-budget-form{
+    .ant-col{
+        .ant-form-item{
+            .ant-form-item-label{
+                >label{
+                    font-size: small;
+                    
+                }
+            }
+            .ant-form-item-control{
+                .ant-input{
+                    padding:12px;
+                }
+            }
+        }
+    }
+    .button-action-success{
+        .ant-space{
+            .ant-space-item{
+                .ant-btn{
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+}

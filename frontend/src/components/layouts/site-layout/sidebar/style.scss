@@ -1,0 +1,125 @@
+@import '../../../../styles/variables';
+
+.sidebar-container {
+    position: relative;
+    z-index: 800;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: #fff;
+    transform: translateX(0);
+    border-right: 1px solid #e5e9ef;
+
+    .header {
+        background-color: $color-white;
+        position: sticky;
+        top: 0;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        padding: 1.875rem 0 0.625rem;
+        z-index: 700;
+        width: 100%;
+
+        .title {
+            display: flex;
+            flex-grow: 1;
+            padding: 1rem 0 0;
+            min-width: 0;
+            margin: 0 1.625rem;
+            text-align: center;
+            
+            .logo {
+                position: relative;
+                flex-shrink: 0;
+                display: block;
+                width: 1.5rem;
+                height: 1.5rem;
+                margin: 0 0.5rem 0 0;
+                background-position: 50%;
+                background-size: cover;
+                border-radius: 100%;
+                border: rem(1px) solid #d9dfe7;
+            }
+
+            .text-title {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 1.25rem;
+                line-height: 1.25em;
+                font-weight: 700;
+                padding: auto 0;
+            }
+        }
+    }
+
+    .menu {
+        padding-top: 2rem;
+        width: 100%;
+        position: relative;
+        flex-shrink: 0;
+        border-right: none;
+
+        .title {
+            overflow: hidden;
+            padding: 1.625rem 0.875rem 0.875rem;
+            color: #343f44;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            white-space: nowrap;
+            letter-spacing: rem(0.4px);
+            font-size: 1rem;
+            line-height: 0.875em;
+            font-weight: 500;
+        }
+    }
+
+    .footer {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        outline: 0;
+        background: $color-white;
+        bottom: 0;
+        position: fixed;
+        z-index: 700;
+        transform: translateX(0);
+        width: rem(200px);
+        border-right: 1px solid #e5e9ef;
+
+        .user-avatar {
+            position: relative;
+            flex-shrink: 0;
+            display: block;
+            width: 2rem;
+            height: 2rem;
+            margin: 0 0.5rem 0 0;
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 100%;
+            border: rem(1px) solid #d9dfe7;
+        }
+        
+        .user-name {
+            padding: 0.25rem 0 0.125rem;
+            word-break: break-all;
+            font-size: 0.625rem;
+            line-height: 1.125em;
+            max-width: 11rem;
+            text-overflow: ellipsis;
+            overflow-x: hidden;
+            white-space: nowrap;
+            margin: -0.125rem 1rem 0.125rem 0;
+            font-weight: 600;
+        }
+        
+        .user-email {
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: #54666d;
+            text-overflow: ellipsis;
+            overflow: scroll; 
+        }
+    }
+}

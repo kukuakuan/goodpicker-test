@@ -1,0 +1,122 @@
+@import '../../styles/variables';
+.profile-page {
+    .app-profile-content {
+        padding: 3rem 2rem 3rem 2rem;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        height: 100%;
+        background-color: #ffd1e8;
+        .w-100 {}
+        .c-2 {
+            font-weight: bold;
+            border: 1px solid #171717;
+            background-color: hsl(176, 80%, 50%, 0.4);
+            width: 80%;
+            -webkit-border-radius: 55px;
+            -moz-border-radius: 55px;
+            border-radius: 55px;
+            padding: 30px;
+            height: 70rem;
+        }
+        .profile-avatar {
+            padding-bottom: rem(40px);
+            height: 10%;
+        }
+        .ant-form {
+            // margin-top: 55px;
+            width: 100%;
+            height: rem(900px);
+            .ant-tabs {
+                font-size: 10px;
+                color: #da3333;
+                align-items: center;
+                align-content: center;
+                width: 100%;
+                .infor-user-tab {
+                    margin-top: rem(10px);
+                }
+            }
+            .form-header {
+                // font: $fw-semiBold 2rem $font-euclid-semibold;
+                line-height: 1.5rem;
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+            .next-button {
+                line-height: 0.3rem;
+                letter-spacing: 0.125rem;
+                width: 20%;
+                height: 2.5rem;
+                border-radius: rem(30px);
+                margin-top: 0;
+                background-color: $color-red;
+                color: $color-white;
+                font-size: 1rem;
+                &:hover {
+                    border: inherit;
+                }
+            }
+            .prev-button {
+                line-height: 0.3rem;
+                letter-spacing: 0.125rem;
+                width: 20%;
+                height: 2.5rem;
+                border-radius: rem(30px);
+                border: 1px solid #000000;
+                margin-top: 0;
+                background-color: #c9c9c9;
+                color: #353535;
+                font-size: 1rem;
+                &:hover {
+                    border: inherit;
+                }
+            }
+            .ant-divider-with-text-center {
+                // font: $fw-medium 1rem $font-euclid-medium;
+                line-height: 1.5rem;
+                margin: 0rem;
+                margin-top: 1.5rem;
+                &::before,
+                &::after {
+                    border-top: 0.125rem solid #c0c0c0;
+                }
+            }
+            &-select {
+                border-radius: 50px;
+            }
+            .low-bradius-formpage-form__selectprofile {
+                // border-radius: 55px;
+                height: 4.5rem;
+                padding-bottom: rem(25px);
+                
+            }
+            
+        }
+        .app-social {
+            justify-content: center;
+            display: flex;
+            .logo-img {
+                width: 2.5rem;
+            }
+            .app-social-item {
+                margin: 0.5rem;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .profile-page {
+        .app-profile-content {
+            padding: 2rem !important;
+            .form-header {
+                margin-bottom: 1rem !important;
+                // font: $fw-medium 1rem $font-euclid-medium !important;
+                line-height: 2rem !important;
+            }
+        }
+    }
+}

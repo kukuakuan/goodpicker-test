@@ -1,0 +1,72 @@
+@import '../../../styles/variables';
+
+.atn-btn-md-custom {
+    height: rem(40px);
+    padding: rem(10px) rem(16px);
+    font-weight: bold;
+    font-style: normal;
+    font-size: rem(12px);
+    line-height: rem(20px);
+    display: flex;
+    align-items: center;
+    letter-spacing: rem(0.5px);
+    border: none;
+}
+
+.atn-btn-sm-custom {
+    height: rem(32px);
+    border-radius: rem(60px);
+    width: fit-content;
+    font-family: EuclidCircularA-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(12px);
+    line-height: rem(18px);
+    text-align: center;
+    margin: 0px rem(5px);
+    border: none;
+}
+
+.atn-btn-lg-custom {
+    height: rem(48px);
+    padding: rem(12px) rem(60px);
+    font-weight: bold;
+    font-style: normal;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    display: flex;
+    align-items: center;
+    letter-spacing: rem(1.5px);
+    border: none;
+}
+
+.atn-btn-color-red {
+    background: $color-red !important;
+    color: #fff !important;
+}
+
+.atn-btn-color-gray {
+    background: $color-bg !important;
+}
+
+.atn-btn-color-black {
+    background: $color-black !important;
+    color: #fff !important;
+}
+
+.atn-btn-color-white {
+    color: $color-black !important; 
+    border: rem(1.5px) solid $color-black !important;
+}
+
+.atn-btn-md-custom.atn-btn-shape-circle {
+    border-radius: rem(40px);
+}
+
+.atn-btn-lg-custom.atn-btn-shape-circle {
+    border-radius: rem(60px);
+}
+
+.atn-btn-shape-round {
+    border-radius: rem(5px);
+}

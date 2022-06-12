@@ -1,0 +1,78 @@
+@import '../../../styles/variables';
+
+.comment-section {
+	margin-top: 3.5rem;
+	&__title {
+		font-size: 1.25rem;
+		font-family: $font-nunito-bold;
+	}
+
+	&-input {
+		margin: 0;
+		margin-top: 1rem;
+		width: 100%;
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		.ant-form-item {
+			margin: 0;
+			flex: 1 1 auto;
+
+			input {
+				padding: 0.5rem 1.25rem;
+				font-size: 0.9rem;
+				border-radius: 100000rem;
+
+				&:hover {
+					border-color: $color-primary-green;
+				}
+
+				&:focus {
+					box-shadow: none;
+				}
+			}
+		}
+
+		button {
+			position: absolute;
+			background: transparent;
+			font-size: 1rem;
+			border: none;
+			right: 0.25rem;
+			cursor: pointer;
+		}
+	}
+
+	&-list {
+		.ant-comment-avatar {
+			height: fit-content;
+		}
+
+		.ant-comment-content-author-name {
+			font-size: 0.9rem;
+
+			a {
+				font-family: $font-nunito-semi-bold;
+				color: $color-black;
+			}
+		}
+
+		.ant-comment-content-author-time {
+			font-size: 0.75rem;
+			margin-left: 0.5rem;
+			color: $color-pale-sky;
+		}
+
+		&-skeleton {
+			margin-top: 1rem;
+		}
+
+		&-item {
+			&__content {
+				font-size: 1.1rem;
+				font-family: $font-nunito-light;
+			}
+		}
+	}
+}

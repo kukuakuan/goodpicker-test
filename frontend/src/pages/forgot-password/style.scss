@@ -1,0 +1,107 @@
+@import '../../../styles/variables';
+
+.forgot-pasword-page {
+    height: 100vh;
+
+    .forgot-pasword-content {
+        padding: 0 8rem;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        background-color: $color-bg;
+
+        .ant-form {
+            width: 100%;
+
+            .form-header {
+                font: $fw-semiBold 2rem $font-euclid-semibold;
+                line-height: 1.5rem;
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+
+            .ant-form-item {
+                margin-bottom: 0;
+
+                .forgot-password {
+                    font: $fw-normal 1rem $font-euclid-regular;
+                    color: $color-red;
+                    line-height: 2rem;
+                    float: right;
+                }
+
+                .send-button {
+                    font: $fw-bold 1rem $font-euclid-bold;
+                    line-height: 2rem;
+                    letter-spacing: 0.125rem;
+                    width: 100%;
+                    height: 3rem;
+                    border-radius: 0.5rem;
+                    margin-top: 1.5rem;
+                    background-color: $color-black;
+                    color: $color-white;
+
+                    &:hover {
+                        border: inherit;
+                    }
+                }
+            }
+
+            .ant-divider-with-text-center {
+                font: $fw-medium 1rem $font-euclid-medium;
+                line-height: 1.5rem;
+                margin: 0rem;
+                margin-top: 1.5rem;
+
+                &::before,
+                &::after {
+                    border-top: 0.125rem solid #c0c0c0;
+                }
+            }
+        }
+
+        .app-social {
+            justify-content: center;
+            display: flex;
+
+            .logo-img {
+                width: 2.5rem;
+            }
+
+            .app-social-item {
+                margin: 0.5rem;
+            }
+        }
+
+        .signup-recommend {
+            text-align: center;
+            margin-top: 8rem;
+            margin-bottom: 2.5rem;
+
+            .normal-text {
+                font: $fw-normal 1rem $font-euclid-regular;
+                line-height: 2rem;
+            }
+
+            .sign-up-text {
+                font: $fw-medium 1rem $font-euclid-semibold;
+                line-height: 2rem;
+                color: $color-red;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .forgot-pasword-page {
+        .forgot-pasword-content {
+            padding: 2rem !important;
+
+            .form-header {
+                margin-bottom: 1rem !important;
+                font: $fw-medium 1rem $font-euclid-medium !important;
+                line-height: 2rem !important;
+            }
+        }
+    }
+}

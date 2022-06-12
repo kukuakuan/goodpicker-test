@@ -1,0 +1,59 @@
+@import '../../../styles/variables';
+
+.atn-select-custom {
+
+    height: rem(48px);
+
+    .ant-select-selector {
+        border-radius: rem(5px) !important;
+        height: inherit !important;
+        border: 0 !important;
+        padding: rem(10px) rem(16px) !important;
+        background: $color-bg !important;
+        font-size: rem(16px);
+        line-height: rem(24px);
+        display: flex;
+        align-items: center;
+    }
+
+    .ant-select-arrow {
+        color: #000000;
+        width: rem(14px);
+        height: rem(12px);
+        right: rem(20px);
+        top: rem(24px);
+
+        span {
+            width: inherit;
+            height: inherit;
+
+            svg {
+                width: inherit;
+                height: inherit;
+            }
+        }
+    }
+}
+
+.ant-select-dropdown.custom-dropdown {
+    background: #FFFFFF;
+    box-shadow: 0px rem(4px) rem(16px) rgba(0, 0, 0, 0.1);
+    border-radius: rem(4px) !important;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    padding: 0 !important;
+
+    .ant-select-item.ant-select-item-option.ant-select-item-option-selected {
+        background: white;
+        color: $color-red;
+        font-weight: 400;
+    }
+
+    .ant-select-item.ant-select-item-option {
+        padding: rem(10px) rem(16px) !important;
+        
+    }
+}

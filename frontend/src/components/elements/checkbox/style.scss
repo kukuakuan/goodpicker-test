@@ -1,0 +1,29 @@
+@import '../../../styles/variables';
+
+.atn-checkbox-custom {
+    font-size: rem(16px);
+
+    .ant-checkbox {
+        height: rem(24px);
+        width: rem(24px);
+        background: #EEEEEE;
+        border-radius: rem(5px);
+
+        .ant-checkbox-inner {
+            height: inherit;
+            width: inherit;
+            border-radius: rem(5px);
+            background-color: #EEEEEE;
+            border: none!important;
+
+            &::after {
+                border: rem(4px) solid $color-red;
+                border-top: 0;
+                border-left: 0;
+                width: rem(9px);
+                height: rem(14px);
+            }
+        }
+    }
+}
+

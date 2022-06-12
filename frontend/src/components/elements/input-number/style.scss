@@ -1,0 +1,38 @@
+@import '../../../styles/variables';
+
+.atn-input-number-custom {
+    height: rem(48px);
+    background: $color-bg !important;
+    border-radius: rem(5px);
+    border: 0;
+    padding: rem(10px) rem(16px);
+    width: 100%;
+
+    .ant-input {
+        background: $color-bg;
+        font-size: rem(16px);
+        line-height: rem(24px);
+    }
+
+    .ant-input-number-input-wrap {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .ant-input-number-handler-wrap {
+        border: 0;
+        background: transparent;
+    }
+
+    .ant-input-number-input {
+        font-size: rem(16px);
+        line-height: rem(24px);
+        padding: 0;
+        height: 100%;
+    }
+
+    .ant-input-number-handler-down {
+        border: 0;
+    }
+}

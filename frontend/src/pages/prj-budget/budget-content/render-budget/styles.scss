@@ -1,0 +1,39 @@
+@import '../../../../styles/variables';
+.budget-tables {
+    .table-action {
+        padding-bottom: 0.5rem;
+        .ant-dropdown-trigger {
+            color: black;
+            font-size: initial;
+        }
+        .item-right{
+            position: absolute;
+                right: 0px;
+            .button-export-xlsx{
+                .ant-btn{
+                    border: 0px;
+                }
+            }
+        }
+        
+    }
+
+    .ant-table-wrapper{
+        .ant-spin-nested-loading{
+            .ant-spin-container{
+                .ant-pagination{
+                    .ant-pagination-options{
+                        .ant-select{
+                            .ant-select-selector{
+                                border: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // .ant-table {
+    //     font-weight: bold;
+    // }
+}

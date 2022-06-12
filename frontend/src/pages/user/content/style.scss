@@ -1,0 +1,12 @@
+@import '../../../styles/variables';
+.user-category {
+    // margin: 0 auto; /* Added */
+    // float: none; /* Added */
+    // margin-bottom: 10px; /* Added */
+    // text-align: justify;
+    &-content {
+        &-category-img {
+            margin-left: rem(360px);
+        }
+    }
+}

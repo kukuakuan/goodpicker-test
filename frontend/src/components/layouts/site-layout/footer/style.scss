@@ -1,0 +1,12 @@
+@import '../../../../styles/variables';
+
+.footer {
+	text-align: center;
+	background-color: rgba($color-primary-green, 0.1);
+	padding: 1.5rem 3.125rem;
+
+	&-content {
+		font-family: $font-nunito-semi-bold;
+		font-size: 0.9rem;
+	}
+}
